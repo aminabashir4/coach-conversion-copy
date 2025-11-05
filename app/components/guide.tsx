@@ -41,7 +41,7 @@ const Guide = () => {
 
   return (
     <section
-      className="py-16 md:py-24 bg-[#132528] fade-in-section"
+      className="mb-20 py-16 md:py-24 bg-[#132528] fade-in-section"
       id="free-guide"
     >
       <div className="container mx-auto px-4 md:px-6">

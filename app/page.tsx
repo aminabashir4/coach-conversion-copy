@@ -10,6 +10,7 @@ import Cta from "./components/cta";
 import Testimonial from "./components/testimonial";
 import Comparison from "./components/comparison";
 import Guide from "./components/guide";
+import Promo from "./components/promo";
 
 const page = () => {
   return (
@@ -26,6 +27,7 @@ const page = () => {
         <Testimonial/>
         <Comparison/>
         <Guide/>
+        <Promo/>
       </div>
     </div>
   );
