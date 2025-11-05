@@ -7,6 +7,7 @@ import Services from "./components/services";
 import Benefits from "./components/benefit";
 import HowWork from "./components/how-work";
 import Cta from "./components/cta";
+import Testimonial from "./components/testimonial";
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
         <Benefits />
         <HowWork/>
         <Cta/>
+        <Testimonial/>
       </div>
     </div>
   );
