@@ -11,6 +11,9 @@ import Testimonial from "./components/testimonial";
 import Comparison from "./components/comparison";
 import Guide from "./components/guide";
 import Promo from "./components/promo";
+import About from "./components/about";
+import CTA from "./components/cta1";
+import Footer from "./components/footer";
 
 const page = () => {
   return (
@@ -28,6 +31,9 @@ const page = () => {
         <Comparison/>
         <Guide/>
         <Promo/>
+        <About/>
+        <CTA/>
+        <Footer/>
       </div>
     </div>
   );
