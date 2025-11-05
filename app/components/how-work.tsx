@@ -21,16 +21,16 @@ interface StepCardProps {
 const StepCard = ({ icon, number, title, description, isLast = false }: StepCardProps) => {
   return (
     <div className="relative flex flex-col md:flex-row items-start fade-in-section" style={{ animationDelay: `${number * 150}ms` }}>
-      <div className="bg-[#132528] rounded-full w-16 h-16 flex items-center justify-center text-coach-green font-clash font-bold text-2xl relative z-10 shadow-md">
+      <div className="bg-black rounded-full w-16 h-16 flex items-center justify-center text-[#00FF8C] font-clash font-bold text-2xl relative z-10 shadow-md">
         {number}
       </div>
       
       {!isLast && (
-        <div className="absolute left-8 top-16 w-[2px] h-0 md:h-[calc(50%_+_2rem)] bg-gradient-to-b from-coach-green to-gray-200 -z-10" />
+        <div className="absolute left-8 top-16 w-0.5 h-0 md:h-[calc(50%+2rem)] bg-linear-to-b from-[#00FF8C] to-gray-200 -z-10" />
       )}
       
       <div className="md:ml-8 mt-6 md:mt-0 pb-12 md:pb-20 flex flex-row md:flex-col gap-x-4">
-        <div className="bg-coach-green/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 shadow-sm ">
+        <div className="bg-[#00FF8C]/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 shadow-sm ">
           {icon}
         </div>
         <div>
@@ -45,22 +45,22 @@ const StepCard = ({ icon, number, title, description, isLast = false }: StepCard
 const HowWork = () => {
   const steps = [
     {
-      icon: <MessageCircle className="h-8 w-8 text-coach-green" />,
-      title: "Discovery Call",
+      icon: <MessageCircle className="h-8 w-8 text-[#00FF8C]" />,
+      title: "Discovery Call",  
       description: "We learn about your coaching business, goals, and current challenges to map out the perfect solution."
     },
     {
-      icon: <Laptop className="h-8 w-8 text-coach-green" />,
+      icon: <Laptop className="h-8 w-8 text-[#00FF8C]" />,
       title: "Custom Funnel Setup",
       description: "Our team creates your personalized lead generation funnel, landing pages, and email sequences."
     },
     {
-      icon: <Rocket className="h-8 w-8 text-coach-green" />,
+      icon: <Rocket className="h-8 w-8 text-[#00FF8C]" />,
       title: "Automation Implementation",
       description: "We connect all systems and automations so leads flow seamlessly through your business."
     },
     {
-      icon: <CircleChevronRight className="h-8 w-8 text-coach-green" />,
+      icon: <CircleChevronRight className="h-8 w-8 text-[#00FF8C]" />,
       title: "Growth & Optimization",
       description: "Regular check-ins and optimizations ensure your funnel continually improves and scales with your business."
     }
@@ -91,7 +91,7 @@ const HowWork = () => {
         
         <div className="text-center mt-12">
           <Button 
-            className="bg-[#132528] hover:bg-[#132528]/90 text-white font-medium text-lg px-8 py-6 rounded-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
+            className="bg-black hover:bg-black/90 text-white font-medium text-lg px-8 py-6 rounded-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
             onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
           >
             Start Your Journey

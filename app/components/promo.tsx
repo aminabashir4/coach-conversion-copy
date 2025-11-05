@@ -51,7 +51,7 @@ export default function Promo() {
       <div className="flex-col md:flex-row flex gap-5 md:gap-8 ">
         {/* Left dark section */}
         <div className="gap-5 md:gap-8 flex flex-col max-w-[529.4px] w-full">
-          <div className="bg-[#132528] text-white px-14 pt-[52px] pb-[70px] flex flex-col justify-center rounded-sm h-[424.9px]">
+          <div className="bg-black text-white px-14 pt-[52px] pb-[70px] flex flex-col justify-center rounded-sm h-[424.9px]">
             <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold leading-tight  mb-6">
               TURN THE PAGE,
               <br />
@@ -61,15 +61,15 @@ export default function Promo() {
               Discover real-world examples and repeatable strategies that show
               how to create opportunity in any economic environment.
             </p>
-            <button className="bg-[#C0E247] text-[#132528] hover:bg-[#132528] hover:text-[#C0E247] font-bold w-fit uppercase text-sm py-3 px-8">
+            <button className="bg-[#00FF8C] text-black hover:bg-black hover:text-[#0bf88d] font-bold w-fit uppercase text-sm py-3 px-8">
               GET YOUR FREE PLAYBOOK
             </button>
           </div>
 
           {/* Yellow testimonial slider section */}
-          <div className="bg-[#C0E247] px-14 pt-[52px] pb-[70px] flex flex-col justify-center relative rounded-sm h-[416.35px]">
+          <div className="bg-[#00FF8C] px-14 pt-[52px] pb-[70px] flex flex-col justify-center relative rounded-sm h-[416.35px]">
             <div className="h-full flex flex-col">
-              <div ref={sliderRef} className="keen-slider flex-grow">
+              <div ref={sliderRef} className="keen-slider grow">
                 {testimonials.map((testimonial, index) => (
                   <div key={index} className="keen-slider__slide">
                     <div className="mb-7">
@@ -78,7 +78,7 @@ export default function Promo() {
                     <h3 className="text-2xl font-medium mb-5">
                       {testimonial.author}
                     </h3>
-                    <p className="text-lg font-medium text-[#132528] mb-12 ">
+                    <p className="text-lg font-medium text-black mb-12 ">
                       {testimonial.quote}
                     </p>
                   </div>

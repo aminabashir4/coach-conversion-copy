@@ -14,6 +14,7 @@ import Promo from "./components/promo";
 import About from "./components/about";
 import CTA from "./components/cta1";
 import Footer from "./components/footer";
+import Sales from "./components/sales";
 
 const page = () => {
   return (
@@ -30,6 +31,7 @@ const page = () => {
         <Testimonial/>
         <Comparison/>
         <Guide/>
+        <Sales/>
         <Promo/>
         <About/>
         <CTA/>

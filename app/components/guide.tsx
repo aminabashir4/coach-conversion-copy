@@ -41,17 +41,17 @@ const Guide = () => {
 
   return (
     <section
-      className="mb-20 py-16 md:py-24 bg-[#132528] fade-in-section"
+      className="mb-20 py-16 md:py-24 bg-black fade-in-section"
       id="free-guide"
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row items-stretch bg-coach-green overflow-hidden transform transition-all">
+        <div className="flex flex-col lg:flex-row items-stretch bg-[#00FF8C] overflow-hidden transform transition-all">
           <div className="lg:w-1/2 p-8 md:p-12 flex flex-col justify-center">
             <div className="flex items-center mb-6">
               <div className="bg-coach-green/20 p-3">
-                <BookOpen className="h-8 w-8 text-[#132528]" />
+                <BookOpen className="h-8 w-8 text-black" />
               </div>
-              <span className="ml-4 text-sm font-semibold uppercase tracking-wider bg-[#132528]/20 px-4 py-1.5">
+              <span className="ml-4 text-sm font-semibold uppercase tracking-wider bg-black/20 px-4 py-1.5">
                 Free Guide
               </span>
             </div>
@@ -81,9 +81,9 @@ const Guide = () => {
                 "Email sequence that turns leads into clients",
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
-                  <div className="bg-[#132528]/20 p-1.5 rounded-full mt-0.5">
+                  <div className="bg-black/20 p-1.5 rounded-full mt-0.5">
                     <svg
-                      className="h-4 w-4 text-[#132528]"
+                      className="h-4 w-4 text-black"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -147,7 +147,7 @@ const Guide = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#C0E247] hover:bg-[#C0E247]/90 text-black font-medium text-lg py-6 rounded-none transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
+                  className="w-full bg-[#00FF8C] hover:bg-[#0bf88d] text-black font-medium text-lg py-6 rounded-none transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Me The Guide"}

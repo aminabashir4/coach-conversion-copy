@@ -20,7 +20,7 @@ const About = () => {
   return (
     <section id="about" className="relative">
       {/* Top Half with Background */}
-      <div className="bg-[#132528] pt-16 md:pt-24 pb-10 md:pb-32 relative z-10 mb-5 md:mb-0">
+      <div className="bg-black pt-16 md:pt-24 pb-10 md:pb-32 relative z-10 mb-5 md:mb-0">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-12">
             {/* Right: Text Content */}

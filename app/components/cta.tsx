@@ -1,7 +1,7 @@
 export default function Cta() {
   return (
     <section className="w-full mb-10">
-      <div className="max-w-[1300px] bg-[#132528] mx-auto px-[25px] md:px-[102px] py-[21px] md:py-[84px]">
+      <div className="max-w-[1300px] bg-black mx-auto px-[25px] md:px-[102px] py-[21px] md:py-[84px]">
         <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 items-center">
           <div>
             <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight">
@@ -22,7 +22,7 @@ export default function Cta() {
             <div>
               <a
                 href="#"
-                className="inline-block bg-[#C0E247] hover:text-[#C0E247] text-[#132528] hover:bg-[#132528] font-bold px-6 py-3 uppercase transition-colors"
+                className="inline-block bg-[#00FF8C] hover:text-[#0bf88d] text-black  font-bold px-6 py-3 uppercase transition-colors"
               >
                 Book Today
               </a>

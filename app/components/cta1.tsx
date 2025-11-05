@@ -40,12 +40,12 @@ const CTA = () => {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-[#132528] fade-in-section" id="cta">
+    <section className="py-16 md:py-24 bg-black fade-in-section" id="cta">
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-block bg-coach-green/20 p-3 rounded-full mb-6">
-              <MessageSquare className="h-8 w-8 text-coach-green animate-pulse-slow" />
+            <div className="inline-block bg-[#00FF8C]/20 p-3 rounded-full mb-6">
+              <MessageSquare className="h-8 w-8 text-[#00FF8C] animate-pulse-slow" />
             </div>
             <h2 className="font-clash text-3xl md:text-4xl font-bold mb-6 leading-tight text-white">
               Ready to Automate Your Coaching Business?
@@ -55,24 +55,24 @@ const CTA = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center mb-12">
               <div className="flex items-center justify-center bg-white px-5 py-3 rounded-none shadow-sm">
-                <span className="font-bold text-coach-green mr-2">✓</span>
+                <span className="font-bold text-[#00FF8C] mr-2">✓</span>
                 <span className="text-gray-800">No obligation</span>
               </div>
               <div className="flex items-center justify-center bg-white px-5 py-3 rounded-none shadow-sm">
-                <span className="font-bold text-coach-green mr-2">✓</span>
+                <span className="font-bold text-[#00FF8C] mr-2">✓</span>
                 <span className="text-gray-800">Free personalized guidance</span>
               </div>
               <div className="flex items-center justify-center bg-white px-5 py-3 rounded-none shadow-sm">
-                <span className="font-bold text-coach-green mr-2">✓</span>
+                <span className="font-bold text-[#00FF8C] mr-2">✓</span>
                 <span className="text-gray-800">30-minute call</span>
               </div>
             </div>
           </div>
 
-          <div className="bg-[#132528] rounded-3xl border border-coach-green shadow-2xl overflow-hidden transform transition-all hover:shadow-xl" id="lead-form">
+          <div className="bg-[#132528] rounded-3xl border border-[#00FF8C] shadow-2xl overflow-hidden transform transition-all hover:shadow-xl" id="lead-form">
             <div className="p-8 md:p-12">
 
-              <h3 className="font-clash text-2xl font-bold mb-8 text-coach-green">Book Your Free Funnel Audit</h3>
+              <h3 className="font-clash text-2xl font-bold mb-8 text-[#00FF8C]">Book Your Free Funnel Audit</h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -87,7 +87,7 @@ const CTA = () => {
                       onChange={handleChange}
                       required
                       placeholder="Jane Doe"
-                      className="rounded-none text-white h-12 border-[#f8df60]/30 focus:border-0 transition-all duration-300 bg-coach-green/5"
+                      className="rounded-none text-white h-12 border-[#f8df60]/30 focus:border-0 transition-all duration-300 bg-[#00FF8C]/5"
                     />
                   </div>
                   <div className="space-y-2">
@@ -102,7 +102,7 @@ const CTA = () => {
                       onChange={handleChange}
                       required
                       placeholder="jane@example.com"
-                      className="rounded-none  text-white h-12 border-[#f8df60]/30 focus:border-white transition-all duration-300 bg-coach-green/5"
+                      className="rounded-none  text-white h-12 border-[#f8df60]/30 focus:border-white transition-all duration-300 bg-[#00FF8C]/5"
                     />
                   </div>
                 </div>
@@ -117,7 +117,7 @@ const CTA = () => {
                     value={formData.website}
                     onChange={handleChange}
                     placeholder="https://yourwebsite.com"
-                    className="rounded-none h-12 text-white  border-[#f8df60]/30 focus:border-white transition-all duration-300 bg-coach-green/5"
+                    className="rounded-none h-12 text-white  border-[#f8df60]/30 focus:border-white transition-all duration-300 bg-[#00FF8C]/5"
                   />
                 </div>
 
@@ -131,13 +131,13 @@ const CTA = () => {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder="Tell us a bit about your current situation..."
-                    className="min-h-[120px] text-white  rounded-none border-[#f8df60]/30 focus:border-coach-green transition-all duration-300 bg-coach-green/5"
+                    className="min-h-[120px] text-white  rounded-none border-[#f8df60]/30 focus:border-[#00FF8C] transition-all duration-300 bg-[#00FF8C]/5"
                   />
                 </div>
 
                 <Button 
                   type="submit"
-                  className="w-full bg-coach-green hover:bg-coach-green/90 text-[#132528] font-medium text-lg py-6 rounded-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
+                  className="w-full bg-[#00FF8C] hover:bg-[#00FF8C]/90 text-[#132528] font-medium text-lg py-6 rounded-none shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-subtle-pulse"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Submitting..." : "Book My Free Funnel Audit"}

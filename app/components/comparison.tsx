@@ -39,13 +39,13 @@ const comparisonData = [
 
 const Comparison = () => {
   return (
-    <div className="w-full bg-[#132528] py-16 md:py-24 px-4">
+    <div className="w-full bg-black py-16 md:py-24 px-4">
       <div className="max-w-[1160px] mx-auto">
         <div className="relative mb-16 md:mb-24">
-          <h2 className="text-center text-coach-green text-3xl md:text-5xl font-bold leading-tight relative z-10 ">
+          <h2 className="text-center text-white text-3xl md:text-5xl font-bold leading-tight relative z-10 ">
             WHY MOST AGENCY COACHING FAILS (AND WHY WE'RE DIFFERENT)
           </h2>
-          <div className="hidden md:block absolute right-0 md:right-72 -bottom-2 md:-bottom-5 rotate-12">
+          <div className="hidden md:block absolute right-0 md:right-60 -bottom-2 md:-bottom-10 rotate-12">
             <img src="/images/element.svg" alt="" />
           </div>
         </div>
@@ -53,7 +53,7 @@ const Comparison = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-16">
           {comparisonData.map((item, index) => (
             <div key={index} className="space-y-2 md:space-y-4">
-              <div className="text-coach-green mb-6">
+              <div className="text-[#00FF8C] mb-6">
                 <img src={item.icon} alt="" />
               </div>
               <div>

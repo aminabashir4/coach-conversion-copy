@@ -26,7 +26,7 @@ const ImageRow = ({ direction }: { direction: "left" | "right" }) => {
         {[...images, ...images].map((src, index) => (
           <div
             key={index}
-            className="w-auto h-[300px] rounded-xl overflow-hidden border shadow-md flex-shrink-0"
+            className="w-auto h-[300px] rounded-xl overflow-hidden border shadow-md shrink-0"
           >
             <img
               src={src}
@@ -42,7 +42,7 @@ const ImageRow = ({ direction }: { direction: "left" | "right" }) => {
 
 const Testimonial = () => {
   return (
-    <section className="py-10 mb-20 bg-gradient-to-br from-coach-green/10 to-white">
+    <section className="py-10 mb-20 ">
       <div className="text-center mb-12 px-4">
         <h2 className="font-clash text-3xl md:text-4xl font-bold mb-2">
           Meet Our Coaches
