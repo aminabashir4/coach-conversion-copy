@@ -1,6 +1,4 @@
-
-
-'use client'
+"use client";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 
@@ -28,44 +26,82 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-        <a href="#" className="text-2xl font-bold text-coach-dark-text">
-          CoachFunnel
+        <a href="#" className="text-2xl font-bold text-[#00FF8C]">
+          BuzzCube
         </a>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center space-x-8">
-          <a href="#how-it-works" className="text-coach-dark-text hover:text-coach-green transition-colors">
+          <a
+            href="#how-it-works"
+            className="text-[#00FF8C] hover:text-black transition-colors"
+          >
             How It Works
           </a>
-          <a href="#benefits" className="text-coach-dark-text hover:text-coach-green transition-colors">
+          <a
+            href="#benefits"
+            className="text-[#00FF8C] hover:text-black transition-colors"
+          >
             Benefits
           </a>
-          <a href="#testimonials" className="text-coach-dark-text hover:text-coach-green transition-colors">
+          <a
+            href="#testimonials"
+            className="text-[#00FF8C] hover:text-black transition-colors"
+          >
             Testimonials
           </a>
-          <a href="#about" className="text-coach-dark-text hover:text-coach-green transition-colors">
+          <a
+            href="#about"
+            className="text-[#00FF8C] hover:text-black transition-colors"
+          >
             About
           </a>
-          <Button 
-            className="bg-[#C0E247] text-black hover:bg-[#C0E247]/90 transition-all rounded-none" 
-            onClick={() => document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" })}
+          <Button
+            className="bg-[#00FF8C] text-black hover:bg-[#0bf88d] transition-all rounded-none"
+            onClick={() =>
+              document
+                .getElementById("cta")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
           >
             Book a Call
           </Button>
         </div>
 
         {/* Mobile menu button */}
-        <button 
-          className="md:hidden text-coach-dark-text" 
+        <button
+          className="md:hidden text-[#00FF8C]"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? (
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           ) : (
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           )}
         </button>
@@ -75,38 +111,40 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 py-4">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
-            <a 
-              href="#how-it-works" 
-              className="text-coach-dark-text hover:text-coach-green transition-colors px-2 py-2"
+            <a
+              href="#how-it-works"
+              className="text-[#00FF8C] hover:text-black transition-colors px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How It Works
             </a>
-            <a 
-              href="#benefits" 
-              className="text-coach-dark-text hover:text-coach-green transition-colors px-2 py-2"
+            <a
+              href="#benefits"
+              className="text-[#00FF8C] hover:text-black transition-colors px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Benefits
             </a>
-            <a 
-              href="#testimonials" 
-              className="text-coach-dark-text hover:text-coach-green transition-colors px-2 py-2"
+            <a
+              href="#testimonials"
+              className="text-[#00FF8C] hover:text-black transition-colors px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Testimonials
             </a>
-            <a 
-              href="#about" 
-              className="text-coach-dark-text hover:text-coach-green transition-colors px-2 py-2"
+            <a
+              href="#about"
+              className="text-[#00FF8C] hover:text-black transition-colors px-2 py-2"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
-            <Button 
-              className="bg-[#f8df60] text-black hover:bg-[#f8df60]/90 transition-all w-full rounded-none" 
+            <Button
+              className="bg-[#00FF8C] text-black hover:bg-[#0bf88d] transition-all w-full rounded-none"
               onClick={() => {
-                document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
+                document
+                  .getElementById("cta")
+                  ?.scrollIntoView({ behavior: "smooth" });
                 setIsMobileMenuOpen(false);
               }}
             >
