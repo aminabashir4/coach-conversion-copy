@@ -9,6 +9,7 @@ import HowWork from "./components/how-work";
 import Cta from "./components/cta";
 import Testimonial from "./components/testimonial";
 import Comparison from "./components/comparison";
+import Guide from "./components/guide";
 
 const page = () => {
   return (
@@ -24,6 +25,7 @@ const page = () => {
         <Cta/>
         <Testimonial/>
         <Comparison/>
+        <Guide/>
       </div>
     </div>
   );

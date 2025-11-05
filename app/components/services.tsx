@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Element from "/images/element.svg"; // ✅ valid because it's in public/
+import Element from "./../../public/images/element.svg"; // ✅ valid because it's in public/
 
 const services = [
   {
