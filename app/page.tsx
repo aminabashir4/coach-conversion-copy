@@ -6,6 +6,7 @@ import ProblemSolutionSection from "./components/problem-solution";
 import Services from "./components/services";
 import Benefits from "./components/benefit";
 import HowWork from "./components/how-work";
+import Cta from "./components/cta";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
       <div className="min-h-screen font-sans overflow-x-hidden bg-white">
         <Benefits />
         <HowWork/>
+        <Cta/>
       </div>
     </div>
   );
