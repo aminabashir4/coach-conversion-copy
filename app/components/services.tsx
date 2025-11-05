@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Element from "./../../public/images/element.svg"; // ✅ valid because it's in public/
+import Element from "./../../public/images/element.svg"; 
+import Image from "next/image";
+import ArrowDown from './../../public/images/arrow-down1.svg'
 
 const services = [
   {
@@ -68,11 +70,11 @@ export default function Services() {
   }, [inViews]);
 
   return (
-    <div className="mx-auto px-4 py-16 bg-[#132528]">
+    <div className="mx-auto px-4 py-16 bg-black">
       <div className="max-w-[1160px] mx-auto">
         {/* Header */}
         <div className="text-center mb-10 md:mb-32 relative z-10">
-          <img
+          <Image
             src={Element}
             alt=""
             className="absolute right-32 -top-4 w-[25px] h-[120px]"
@@ -108,8 +110,8 @@ export default function Services() {
 
                 {(index === 0 || index === 1) && (
                   <div className="mt-16 animate-bounce">
-                    <img
-                      src="/images/arrow-down1.png" // ✅ fixed path
+                    <Image
+                      src={ArrowDown} 
                       alt="Arrow Down"
                       className="mx-auto"
                     />

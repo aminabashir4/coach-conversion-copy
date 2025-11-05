@@ -17,7 +17,7 @@ const stats = [
 
 const StatsSection = () => {
   return (
-    <div className="w-full bg-[#132528] py-20 px-4">
+    <div className="w-full bg-black py-20 px-4">
       <div className="max-w-[1440px] mx-auto">
         <h2 className="text-center text-3xl md:text-[40px] font-bold mb-14 md:mb-[120px] text-[#F8FCEC] uppercase ">
           AN OPERATING SYSTEM WORTH BELIEVING IN

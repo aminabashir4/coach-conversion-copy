@@ -57,7 +57,7 @@ const benefits = [
 const Benefits = () => {
   return (
     <section
-      className="py-16 md:py-24 bg-[#132528] fade-in-section"
+      className="py-16 md:py-24 bg-black fade-in-section"
       id="benefits"
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -89,8 +89,8 @@ const Benefits = () => {
                 {benefit.description}
               </p>
 
-              <div className="flex items-center bg-[#C0E247] text-[#132528] text-sm border border-[#C0E247] px-4 py-2">
-                <Check className="h-4 w-4 text-[#132528] mr-2" />
+              <div className="flex items-center bg-[#00FF8C] text-black text-sm border border-[#00FF8C] px-4 py-2">
+                <Check className="h-4 w-4 text-black mr-2" />
                 {benefit.checkText}
               </div>
             </div>
